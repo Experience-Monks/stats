@@ -1,0 +1,40 @@
+{
+  "name": "@jam3/stats",
+  "version": "1.0.0",
+  "description": "Default Performance Monitor @ Jam3",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "keywords": [
+    "monitor",
+    "performance",
+    "stats",
+    "memory",
+    "fps"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jam3/stats.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jam3/stats/issues"
+  },
+  "homepage": "https://github.com/Jam3/stats#readme",
+  "devDependencies": {
+    "jest": "^24.0.0",
+    "jest-canvas-mock": "^2.0.0-alpha.2"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!**/node_modules/**"
+    ],
+    "setupFiles": ["jest-canvas-mock"]
+  },
+  "dependencies": {
+    "stats.js": "^0.17.0"
+  }
+}
