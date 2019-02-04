@@ -18,7 +18,7 @@ const stats = require('@jam3/stats');
 stats();
 ```
 
-It's recommended it use this library only in development, a common way to use it at Jam3 is:
+It's recommended to use this library only in development, a common way to use it at Jam3 is:
 
 ```
 if (process.env.NODE_ENV !== 'production' && window.location.href.indexOf('?nostat') === -1) require('./util/stats')();
