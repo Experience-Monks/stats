@@ -4,7 +4,8 @@
   "description": "Default Performance Monitor @ Jam3",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "test-ci": "jest --ci"
   },
   "keywords": [
     "monitor",
@@ -32,7 +33,9 @@
       "src/**/*.js",
       "!**/node_modules/**"
     ],
-    "setupFiles": ["jest-canvas-mock"]
+    "setupFiles": [
+      "jest-canvas-mock"
+    ]
   },
   "dependencies": {
     "stats.js": "^0.17.0"
