@@ -1,8 +1,9 @@
 const Stats = require('stats.js');
 
 module.exports = function() {
+  let stats;
   try {
-    const stats = new Stats();
+    stats = new Stats();
     stats.domElement.style.cssText = 'position:fixed;right:0;bottom:100px;z-index:10000';
     document.body.appendChild(stats.domElement);
     const loop = function() {
@@ -13,4 +14,5 @@ module.exports = function() {
   } catch (e) {
     console.warn('Stats.js could not be loaded.');
   }
+  return stats;
 };
