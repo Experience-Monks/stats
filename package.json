@@ -1,6 +1,6 @@
 {
   "name": "@jam3/stats",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Default Performance Monitor @ Jam3",
   "main": "src/index.js",
   "scripts": {
